@@ -36,6 +36,10 @@ class AI(BaseAI):
         """
         # <<-- Creer-Merge: start -->> - Code you add between this comment and the end comment will be preserved between Creer re-runs.
         # replace with your start logic
+        self.moves_todo = {
+            "r":"000222444666111333555",
+            "y":"111333555000222444666"
+        }
         # <<-- /Creer-Merge: start -->>
 
     def game_updated(self) -> None:
@@ -55,6 +59,7 @@ class AI(BaseAI):
         # <<-- Creer-Merge: end -->> - Code you add between this comment and the end comment will be preserved between Creer re-runs.
         # replace with your end logic
         # <<-- /Creer-Merge: end -->>
+
     def make_move(self) -> str:
         """This is called every time it is this AI.player's turn to make a move.
 
@@ -63,7 +68,12 @@ class AI(BaseAI):
         """
         # <<-- Creer-Merge: makeMove -->> - Code you add between this comment and the end comment will be preserved between Creer re-runs.
         # Put your game logic here for makeMove
-        return ""
+        move = self.moves_todo[self.game.rep_string.split(" ")[1]][:1]
+        self.moves_todo["r"] = self.moves_todo["r"][1:]
+        self.moves_todo["y"] = self.moves_todo["y"][1:]
+        import time
+        time.sleep(0.25)
+        return move
         # <<-- /Creer-Merge: makeMove -->>
 
     # <<-- Creer-Merge: functions -->> - Code you add between this comment and the end comment will be preserved between Creer re-runs.
