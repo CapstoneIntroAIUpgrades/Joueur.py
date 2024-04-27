@@ -38,8 +38,8 @@ class AI(BaseAI):
         # replace with your start logic
         # <start row> <start col> <end row> <end col> <shoot row> <shoot col>
         self.moves_todo = {
-            "q":"9 3 8 3 9 3",
-            "Q":"0 3 1 3 0 3"
+            "q":"606354695956634352434453441757590459171819043407343532351542150422041423141514936676968696868586667766776879152515182818686968253525354535454445444344433343333433",
+            "Q":"033355304050403151062846287858392949290936090817332326231316131424141303130413040504788780877787777867788878889977999897988898888988899989050605080908314131414030404140"
         }
         # <<-- /Creer-Merge: start -->>
 
@@ -69,12 +69,12 @@ class AI(BaseAI):
         """
         # <<-- Creer-Merge: makeMove -->> - Code you add between this comment and the end comment will be preserved between Creer re-runs.
         # Put your game logic here for makeMove
-        move = self.moves_todo[self.game.rep_string.split(" ")[1]][:11]
-        self.moves_todo["Q"] = self.moves_todo["Q"][11:]
-        self.moves_todo["q"] = self.moves_todo["q"][11:]
+        move = self.moves_todo[self.game.rep_string.split(" ")[1]][:6]
+        self.moves_todo["Q"] = self.moves_todo["Q"][6:]
+        self.moves_todo["q"] = self.moves_todo["q"][6:]
         import time
         time.sleep(0.25)
-        return move
+        return f"{move[0]} {move[1]} {move[2]} {move[3]} {move[4]} {move[5]}"
         # <<-- /Creer-Merge: makeMove -->>
 
     # <<-- Creer-Merge: functions -->> - Code you add between this comment and the end comment will be preserved between Creer re-runs.

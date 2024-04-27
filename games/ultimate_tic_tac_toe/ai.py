@@ -38,8 +38,8 @@ class AI(BaseAI):
         # replace with your start logic
         # <row><col> # a3
         self.moves_todo = {
-            "x":"a1d2d4",
-            "o":"b1b2b3"
+            "x":"f5d5e5i7i5h3g9f1h2b1h8c2d3h6c1f8a7b9d1e2e9c7a9",
+            "o":"h5b5c6i2i4f9b7i1a4f3i3h4c8d7b3g6a3e7c3c9d8b8a8"
         }
         # <<-- /Creer-Merge: start -->>
 
