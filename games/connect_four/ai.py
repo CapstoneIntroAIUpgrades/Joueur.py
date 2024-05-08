@@ -37,8 +37,8 @@ class AI(BaseAI):
         # <<-- Creer-Merge: start -->> - Code you add between this comment and the end comment will be preserved between Creer re-runs.
         # replace with your start logic
         self.moves_todo = {
-            "r":"000222444666111333555",
-            "y":"111333555000222444666"
+            "r":"aaaccceeegggbbbdddfff",
+            "y":"bbbdddfffaaaccceeeggg"
         }
         # <<-- /Creer-Merge: start -->>
 
@@ -73,7 +73,9 @@ class AI(BaseAI):
         self.moves_todo["y"] = self.moves_todo["y"][1:]
         import time
         time.sleep(0.25)
+        print(self.game.rep_string)
         return move
+        #return input("Enter move: ")
         # <<-- /Creer-Merge: makeMove -->>
 
     # <<-- Creer-Merge: functions -->> - Code you add between this comment and the end comment will be preserved between Creer re-runs.

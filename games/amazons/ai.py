@@ -74,7 +74,10 @@ class AI(BaseAI):
         self.moves_todo["q"] = self.moves_todo["q"][6:]
         import time
         time.sleep(0.25)
-        return f"{move[0]} {move[1]} {move[2]} {move[3]} {move[4]} {move[5]}"
+        letters = "abcdefghij"
+        #print(self.game.rep_string)
+        return f"{letters[int(move[1])]}{int(move[0]) + 1}{letters[int(move[3])]}{int(move[2]) + 1}{letters[int(move[5])]}{int(move[4]) + 1}"
+        #return input("Enter move: ")
         # <<-- /Creer-Merge: makeMove -->>
 
     # <<-- Creer-Merge: functions -->> - Code you add between this comment and the end comment will be preserved between Creer re-runs.

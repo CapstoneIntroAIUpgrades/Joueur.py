@@ -75,6 +75,7 @@ class AI(BaseAI):
         import time
         time.sleep(0.25)
         return move
+        #return input("Enter move: ")
         # <<-- /Creer-Merge: makeMove -->>
 
     # <<-- Creer-Merge: functions -->> - Code you add between this comment and the end comment will be preserved between Creer re-runs.
